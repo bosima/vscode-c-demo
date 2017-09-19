@@ -1,0 +1,24 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "build-hello", // 任务名称
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "hello.c",
+                "-o hello", // 生成hello.exe
+                "-g" // 产生调试信息
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
